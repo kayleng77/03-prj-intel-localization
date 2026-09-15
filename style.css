@@ -1,0 +1,197 @@
+/* Add your CSS here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'intel-one-body-text', Helvetica, Arial, sans-serif;
+  background: #fff; 
+  /*padding: 40px;*/
+}
+
+section {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 20px;
+  gap: 20px;
+  width: 1100px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.card {
+  position: relative;
+  width: 250px;
+  flex: 0 0 250px;
+  scroll-snap-align: start;
+  /* background: #eef4fe;
+  border: 5px solid #eef4fe; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: #eef4fe;
+  border: 5px solid #eef4fe;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  padding: 10px;
+}
+
+header {
+
+  margin-bottom: 40px;
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(rgba(20, 92, 113, 0.42), rgba(11, 47, 61, 0.54)),
+    url("img/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+  padding: 40px;
+  display: block;
+  margin: 0 auto;
+  
+}
+
+header h1{
+  text-align: center;
+  font-size: 50px;
+  font-family: 'intel-one-display-medium', Helvetica, Arial, sans-serif;
+  color: #fff;
+  padding: 0 40px;
+}
+
+header p {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'intel-one-body-text', Helvetica, Arial, sans-serif;
+  margin-top: 10px;
+  color: #fff;
+  padding: 0 60px;
+}
+
+/* card year */
+.card h2{
+  font-size: 25px;
+  font-family:'intel-one-display-medium', Helvetica, Arial, sans-serif;
+  color: #000;
+}
+
+/* Card title */
+.card h3{
+  font-size: 20px;
+  font-family: 'intel-one-display-medium', Helvetica, Arial, sans-serif;
+  color: #000;
+}
+
+.card p{
+  font-family: 'intel-one-body-text', Helvetica, Arial, sans-serif;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+}
+
+.card:hover p {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scroll_instructions {
+  text-align: center;
+  font-family: 'intel-one-body-text', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  /*margin-top: 20px;*/
+  padding: 20px;
+  margin-bottom: 75px;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  section {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .card {
+    width: 200px;
+    flex: 0 0 200px;
+  }
+
+  header h1 {
+    font-size: 40px;
+    padding: 0 20px;
+  }
+
+  header p {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+
+
+  .logo {
+    width: 140px;
+    height: auto;
+    padding: 40px;
+    
+  }
+
+}
+
+@media (max-width: 480px) {
+  section{
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding: 15px;
+  }
+
+  
+  header {
+    min-height: 400px;
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 30px;
+    padding: 0 10px;
+  }
+
+  header p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .logo {
+    width: 120px;
+    height: auto;
+    padding: 20px;
+    
+  } 
+
+
+}
+
+
