@@ -116,6 +116,7 @@ header p {
   top: 58px;
   left: 20px;
   right: 20px;
+  margin-bottom: 10px;
   z-index: 1;
   font-size: 20px;
   font-family: 'intel-one-display-medium', Helvetica, Arial, sans-serif;
@@ -126,7 +127,7 @@ header p {
 
 .card p{
   position: absolute;
-  top: 105px;
+  top: 90px;
   left: 10px;
   right: 10px;
   z-index: 1;
@@ -156,9 +157,18 @@ header p {
   font-size: 16px;
   /*margin-top: 20px;*/
   padding: 20px;
-  margin-bottom: 75px;
   color: #000;
 }
+
+
+footer {
+  text-align: center;
+  font-family: 'intel-one-body-text', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  padding: 20px;
+  color: #000;
+}
+
 
 @media (max-width: 768px) {
   section {
