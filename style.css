@@ -157,9 +157,48 @@ header p {
   font-size: 16px;
   /*margin-top: 20px;*/
   padding: 20px;
+  color: #637085;
+  font-weight: bold;
+}
+
+.content-heading-link {
+  color: #000;
+  text-decoration: none;
+}
+
+.content-heading-link:hover {
+  color: #0068b5;
+}
+
+.content-section {
+  font-family: 'intel-one-display-medium', Helvetica, Arial, sans-serif;
+  text-align: left;
+}
+
+/*
+.content-section p {
+  color: #637085;
+  font-weight: bold;
+}
+
+.subscription-section p {
+  color: #637085;
+  font-weight: bold;
+}
+*/
+
+.container p{
+  color: #637085;
+  font-weight: bold;
+}
+
+.subscription-section h2{
   color: #000;
 }
 
+.subscription-form {
+  font-weight: bold;
+}
 
 footer {
   text-align: center;
