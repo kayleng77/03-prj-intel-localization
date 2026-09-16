@@ -208,10 +208,40 @@ footer {
   color: #000;
 }
 
+.foot-links {
+  text-align: center;
+  justify-content: center; /* Centers items horizontally */
+  padding: 20px;
+  color: #000;
+}
+
 ul {
-  list-style-type: none; /* Removes the bullet points */
   padding: 0;            /* Removes the default left indentation */
   margin: 0;             /* Removes default top/bottom spacing */
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  list-style: none;        /* Removes default bullets */
+  gap: 15px;
+}
+
+.accordion h2{
+
+  color: #000;
+}
+
+.accordion-body {
+  text-align: left;
+  color: #637085;
+  font-weight: bold;
+  font-family: 'intel-one-body-text', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.accordion-item h2 {
+  font-family: 'intel-one-display-medium', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
