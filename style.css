@@ -208,6 +208,11 @@ footer {
   color: #000;
 }
 
+ul {
+  list-style-type: none; /* Removes the bullet points */
+  padding: 0;            /* Removes the default left indentation */
+  margin: 0;             /* Removes default top/bottom spacing */
+}
 
 @media (max-width: 768px) {
   section {
